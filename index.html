@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+
     <style>
         .fixed-size {
         width: 400px; /* Fixed width */
@@ -89,7 +90,7 @@
                                 <a href="#" class="header-nav-link search-box-outer"><i class="far fa-search"></i></a>
                             </div>
                             <div class="header-btn">
-                                <a href="#" class="theme-btn">Chat With Us<i class="far fa-arrow-right"></i></a>
+                                <a href="https://wa.me/message/2IFVTGXRLMBHI1" class="theme-btn">Chat With Us<i class="far fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -277,7 +278,7 @@
                     <div class="col-lg-6">
                         <div class="about-left">
                             <div class="about-img">
-                                <img src="ko1.jpg" alt="">
+                                <img src="i/koje_.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -327,7 +328,7 @@
                                     <a href="#">Suit Tailoring</a>
                                 </h3>
                                 <p class="service-text">
-                                    There are many variations of passages available.
+                                    <!-- There are many variations of passages available. -->
                                 </p>
                                 <div class="service-arrow">
                                     <a href="#" class="service-btn">Read More <i
@@ -346,7 +347,7 @@
                                     <a href="#">Native Outfits </a>
                                 </h3>
                                 <p class="service-text">
-                                    There are many variations of passages available.
+                                    <!-- There are many variations of passages available. -->
                                 </p>
                                 <div class="service-arrow">
                                     <a href="#" class="service-btn">Read More <i
@@ -365,7 +366,7 @@
                                     <a href="#">Wedding Gown</a>
                                 </h3>
                                 <p class="service-text">
-                                    There are many variations of passages available.
+                                    <!-- There are many variations of passages available. -->
                                 </p>
                                 <div class="service-arrow">
                                     <a href="#" class="service-btn">Read More <i
@@ -384,7 +385,7 @@
                                     <a href="#">Casual Outfits</a>
                                 </h3>
                                 <p class="service-text">
-                                    There are many variations of passages available.
+                                    <!-- There are many variations of passages available. -->
                                 </p>
                                 <div class="service-arrow">
                                     <a href="#" class="service-btn">Read More <i
@@ -803,6 +804,44 @@
     <script src="assets/js/masonry.pkgd.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+        var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?68171';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+        "enabled":true,
+        "chatButtonSetting":{
+            "backgroundColor":"#00e785",
+            "ctaText":"Chat with us",
+            "borderRadius":"25",
+            "marginLeft": "0",
+            "marginRight": "20",
+            "marginBottom": "20",
+            "ctaIconWATI":false,
+            "position":"right"
+        },
+        "brandSetting":{
+            "brandName":"KOJE ORIGINALS",
+            "brandSubTitle":"undefined",
+            "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+            "welcomeText":"Hi there!\nHow can I help you?",
+            "messageText":"Hello, %0A I have a question about {{page_link}}",
+            "backgroundColor":"#00e785",
+            "ctaText":"Chat with us",
+            "borderRadius":"25",
+            "autoShow":false,
+            "phoneNumber":"2348148794467"
+        }
+        };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
 
 </body>
 
